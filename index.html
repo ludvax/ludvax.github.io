@@ -1,25 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html ⚡ lang="en">
 <head>
-    <title>Title</title>
-    <link rel="canonical" href="https://{guthub_username}.github.io/{repository}/" />
-    <style type="text/css">
-    /* --- application CSS here --- */
-    *{
-      background-color: #F5F4F0;
-      font-family: Georgia, serif;
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="This is the AMP Boilerplate.">
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <!-- Import other AMP Extensions here -->
+    <script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
+    <style amp-custom>
+      /* Add your styles here */
+      </style>
+      <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+   
+      <link rel="canonical" href=".">
+    
+    <!-- <link rel="canonical" href="https://{guthub_username}.github.io/{repository}/" /> -->
+
+    <title>My AMP Page</title>
+    <link rel="manifest" href="/manifest.json">
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Webpage",
+      "url": "https://ludvax.github.io/",
+      "name": "My Webpage",
+      "headline": "webpage title",
+      "description": "Here is the description",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ludvax.github.io/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "The Publisher",
+        "logo": {
+          "url": "https://ludvax.github.io/logo-blue.svg",
+          "width": 175,
+          "height": 60,
+          "@type": "ImageObject"
+        }
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ludvax.github.io/leader.png",
+        "width": 1200,
+        "height": 630
+      }
     }
-    </style>
+    </script>
 </head>
 <body>
   <h1>Content</h1>
   <script>
   // register ServiceWorker, remember to use absolute path!
   if (navigator.serviceWorker) {
-    navigator.serviceWorker.register('/{repository}/sw.js', {scope: '/{repository}/'})
+    navigator.serviceWorker.register('/ludvax/sw.js', {scope: '/ludvax/'})
   }
   
   // --- Application code here ---
   </script>
+<amp-install-serviceworker src="/sw.js" data-iframe-src="install-sw.html" layout="nodisplay">
+</amp-install-serviceworker>
 </body>
 </html>
