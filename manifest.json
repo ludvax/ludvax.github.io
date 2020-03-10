@@ -1,0 +1,21 @@
+{
+  "name": "Newssite",
+  "short_name": "Newssite example",
+  "description": "Newssite example for BärnerJs Talk",
+  "icons": [
+    {
+      "src": "img/jslogo48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "img/jslogo144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#f0db4f",
+  "display": "standalone",
+  "theme_color": "#f0db4f"
+}
